@@ -5,13 +5,279 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>Document</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+
+  <title>Vuex team</title>
 </head>
 
 <body>
 
-  
+  <header>
+    <div class="container">
+      <div class="header-wrapper">
+        <button class="hidden"><img src="/icons/menu.svg" alt="menu"></button>
+
+        <div class="header-wrapper-item flex items-center justify-between my-30">
+          <a href="/" class="logo"><img src="/icons/logo.svg" alt="logo"></a>
+
+          <form class="searchBox flex items-center justify-between">
+            <input type="text" name="search" id="search" placeholder="Я хочу найти...">
+
+            <button type="submit"><img src="/icons/search.svg" alt="search"></button>
+          </form>
+
+          <button class="askQuestion flex items-center justify-between gap-15">
+            <img src="/icons/question.svg" alt="ask">
+
+            <span>Задать вопрос</span>
+          </button>
+
+          <div class="contact">
+            <h3>8 800 302-92-70</h3>
+            <h4>Бесплатный звонок юристу 24/7 </h4>
+          </div>
+        </div>
+
+        <nav class="nav flex items-center justify-between">
+          <ul class="flex items-center gap-15">
+            <li>
+              <button class="flex items-center justify-between gap-15">
+                <img src="/icons/phone.svg" alt="call">
+
+                <span>Заказать звонок</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="flex items-center justify-between gap-15">
+                <img src="/icons/telegram.svg" alt="call">
+
+                <span>Telegram</span>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="flex items-center gap-30">
+            <li>
+              <a href="/">Отзывы</a>
+            </li>
+
+            <li>
+              <a href="/">Вопросы</a>
+            </li>
+
+            <li>
+              <a href="/">Наши юристы</a>
+            </li>
+
+            <li>
+              <a href="/">Статьи</a>
+            </li>
+
+            <li>
+              <a href="/">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="flex items-start gap-15">
+            <div class="hidden">
+              <img src="/icons/search-green.svg" alt="search">
+            </div>
+
+            <a href="/" class="signin flex items-center gap-15">
+              <img src="/icons/user.svg" alt="user">
+
+              <span>Вход / Регистрация</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="route flex items-center gap-15 my-30">
+        <span>Главная</span>
+        <span>/</span>
+        <span>Горячая линия</span>
+      </div>
+    </div>
+  </header>
 
 </body>
+
+<style lang="css">
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .items-start {
+    align-items: start;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .gap-15 {
+    gap: 15px;
+  }
+
+  .gap-30 {
+    gap: 30px;
+  }
+
+  .my-30 {
+    margin: 30px 0;
+  }
+
+  .hidden {
+    display: none
+  }
+
+  .searchBox {
+    width: 300px;
+    border-radius: 10px;
+    background: var(--gray-background, rgba(47, 43, 67, 0.04));
+    padding: 8px 20px;
+  }
+
+  .searchBox button {
+    border: none;
+    background: none;
+  }
+
+  .searchBox:focus-within {
+    outline: solid var(--gray-background, rgba(47, 43, 67, 0.06)) 1px;
+  }
+
+  .searchBox input {
+    width: 85%;
+    border: none;
+    background: none;
+  }
+
+  .searchBox input:focus {
+    outline: none;
+  }
+
+  .askQuestion {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: var(--green, #33836E);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .askQuestion:hover {
+    background: var(--green, #33836ef2);
+  }
+
+  .contact h3 {
+    color: var(--base-black, #140A32);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .contact h4 {
+    color: var(--gray-medium, rgba(47, 43, 67, 0.50));
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--base-black, #140A32);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  nav button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    cursor: pointer;
+  }
+
+  nav button:hover {
+    background: var(--gray-borders, rgba(47, 43, 67, 0.02));
+  }
+
+  .route {
+    color: var(--gray-medium, rgba(47, 43, 67, 0.50));
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media (max-width:640px) {
+    .container {
+      max-width: 370px;
+    }
+
+    .searchBox,
+    .signin span,
+    .nav ul,
+    .askQuestion,
+    .contact {
+      display: none;
+    }
+
+    .hidden {
+      display: block;
+      border: none;
+      background: none;
+    }
+
+    .header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--gray-borders, rgba(47, 43, 67, 0.15));
+    }
+
+    .my-30 {
+      margin: 20px 0;
+    }
+
+    .logo {
+      width: 150px;
+    }
+
+    .logo img {
+      width: 100%;
+    }
+  }
+</style>
 
 </html>
