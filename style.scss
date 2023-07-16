@@ -644,6 +644,7 @@ $medium: 900px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.96px;
+  margin-bottom: 20px;
 }
 
 .sudo-wrapper-1 {
@@ -845,6 +846,7 @@ $medium: 900px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 20px;
   letter-spacing: -0.96px;
 }
 
@@ -981,11 +983,13 @@ $medium: 900px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -0.96px;
+  margin-bottom: 20px;
 }
 
 .sudo-wrapper-5-div {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .sudo-wrapper-5-div-1 {
@@ -1116,6 +1120,110 @@ $medium: 900px;
   gap: 3px;
   border-radius: 10px;
   background: var(--base-white, #fff);
+}
+
+.sudo-wrapper-5-div-2 textarea:focus {
+  outline: none;
+}
+
+.sudo-wrapper-5-div-2-div-2 {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.sudo-wrapper-5-btn-1 {
+  display: flex;
+  padding: 7px 16px 8px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  flex: 1 0 0;
+  border-radius: 10px;
+  background: var(--base-white, #fff);
+  border: none;
+}
+
+.sudo-wrapper-5-btn-1-span-1 {
+  color: var(--gray-low, rgba(47, 43, 67, 0.4));
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sudo-wrapper-5-btn-1-span-2 {
+  color: var(--base-black, #140a32);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sudo-wrapper-5-btn-2 {
+  display: flex;
+  padding: 16px 24px 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--base-black, #140a32);
+  border: none;
+  color: var(--base-white, #fff);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.sudo-wrapper-5-span {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.sudo-wrapper-5-div-2-div-3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.sudo-wrapper-5-div-2-div-3 div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sudo-wrapper-5-div-2-div-3 p {
+  color: var(--base-white, #fff);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+
+.sudo-wrapper-5-div-2-div-3 span {
+  color: var(--base-white, #fff);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (max-width: 640px) {
