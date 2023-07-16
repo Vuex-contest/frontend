@@ -1,0 +1,197 @@
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px 0;
+}
+.container .space {
+  margin-bottom: 60px;
+}
+.container .green-cont {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background: #33836e;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  padding: 0 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.container .green-cont .green-cont-left {
+  width: 20%;
+}
+.container .green-cont .green-cont-left .human-img {
+  z-index: 4;
+  position: relative;
+}
+.container .green-cont .green-cont-left .ellipse-img {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container .green-cont .green-cont-right {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .green-cont .green-cont-right .head-5 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.container .green-cont .green-cont-right .head-4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.container .green-cont .green-cont-right .head-3 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.container .help-cont .help-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.container .help-cont .help-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.container .help-cont .help-grid .help-grid-item {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid rgba(47, 43, 67, 0.1490196078);
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.container .help-cont .help-grid .help-grid-item p {
+  width: 350px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.container .choose-cont .choose-top {
+  display: flex;
+  align-items: center;
+}
+.container .choose-cont .choose-top-left {
+  width: 50%;
+}
+.container .choose-cont .choose-top-left .choose-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.container .choose-cont .choose-top-left p {
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 400;
+  padding: 15px 0;
+}
+.container .choose-cont .choose-top-left .choose-number {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.container .choose-cont .choose-top-left .choose-number-title {
+  font-size: 28px;
+  color: #33836e;
+}
+.container .choose-cont .choose-top-left .choose-number-p {
+  font-size: 16px;
+}
+.container .choose-cont .choose-top .choose-top-right {
+  width: 50%;
+}
+.container .choose-cont .choose-top .choose-top-right img {
+  position: relative;
+  bottom: -5px;
+}
+.container .choose-cont .choose-bottom {
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  background: #33836e;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  padding: 0 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+.container .choose-cont .choose-bottom-left {
+  width: 50%;
+}
+.container .choose-cont .choose-bottom-left-head-4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.container .choose-cont .choose-bottom-left-head-3 {
+  font-size: 42px;
+  font-weight: 600;
+}
+.container .choose-cont .choose-bottom-right {
+  width: 50%;
+}
+.container .choose-cont .choose-bottom-right-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.container .choose-cont .choose-bottom-right-buttons {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.container .choose-cont .choose-bottom-right-buttons-1 {
+  width: 40%;
+  padding: 7px 16px 8px 16px;
+  text-align: start;
+  background: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.container .choose-cont .choose-bottom-right-buttons-1 p {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  margin-bottom: 5px;
+}
+.container .choose-cont .choose-bottom-right-buttons-2 {
+  width: 40%;
+  border: 1px solid white;
+  color: white;
+  background: none;
+  padding: 7px 16px 8px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.container .choose-cont .choose-bottom-right-p {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 15px 0;
+  color: rgba(255, 255, 255, 0.5);
+}/*# sourceMappingURL=farrux.css.map */
