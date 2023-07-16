@@ -1,128 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./farrux.css" />
-		<!-- google fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-			rel="stylesheet" />
-		<!-- google fonts -->
-		<title>Document</title>
-	</head>
-	<body>
-		<section class="container">
-			<div class="green-cont">
-				<div class="green-cont-left">
-					<img src="./img/woman.png" class="human-img" alt="" />
-					<img src="./img/ellipse.png" class="ellipse-img" alt="" />
-				</div>
-				<div class="green-cont-right">
-					<div class="green-child-2">
-						<h4 class="head-4">Звоните, мы работаем 24/7</h4>
-						<h3 class="head-3">8 800 302-92-70</h3>
-					</div>
-					<div class="green-child-3">
-						<h5 class="head-5">64 юриста сейчас онлайн</h5>
-						<img src="./img/users.png" alt="" />
-					</div>
-				</div>
-			</div>
-			<div class="space"></div>
-			<div class="help-cont">
-				<h4 class="help-title">Как мы сможем помочь вам?</h4>
-				<div class="help-grid">
-					<div class="help-grid-item">
-						<img src="./img/help-1.png" alt="" />
-						<p>
-							Провести бесплатную консультацию на личном приёме у нас в офисе,
-							по телефону горячей линии <b>8 800 302-92-70</b>, в онлайн чате
-							или по WhatsApp и Telegram
-						</p>
-					</div>
-					<div class="help-grid-item">
-						<img src="./img/help-2.png" alt="" />
-						<p>
-							В ходе консультации будет проанализирована ваша ситуация с точки
-							зрения законодательства Российской Федерации с последними
-							изменениями на сегодняшний день
-						</p>
-					</div>
-					<div class="help-grid-item">
-						<img src="./img/help-3.png" alt="" />
-						<p>
-							После чего наш специалист сможет определить все возможные пути
-							решения вашей ситуации выявить все возможные подводные камни и
-							подскажет как их избежать.
-						</p>
-					</div>
-					<div class="help-grid-item">
-						<img src="./img/help-4.png" alt="" />
-						<p>
-							Как показывает практика данной консультации бывает достаточно для
-							решения вашего вопроса. Если нет, то вы всегда сможете
-							воспользоваться нашими услугами на выгодных условиях.
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="space"></div>
-			<div class="choose-cont">
-				<div class="choose-top">
-					<div class="choose-top-left">
-						<h4 class="choose-title">Почему стоит выбрать нас?</h4>
-						<p>
-							Срочно понадобились услуги профессионального юриста или адвоката?
-							Решение есть! Наша горячая юридическая линия – возможность
-							оперативно, абсолютно бесплатно получить ответ на любой вопрос
-						</p>
-						<div class="choose-number">
-							<div class="">
-								<h4 class="choose-number-title">100 тыс</h4>
-								<p class="choose-number-p">Успешных дел</p>
-							</div>
-							<div class="">
-								<h4 class="choose-number-title">10 лет</h4>
-								<p class="choose-number-p">Успешных дел</p>
-							</div>
-							<div class="">
-								<h4 class="choose-number-title">100</h4>
-								<p class="choose-number-p">Юристов онлайн</p>
-							</div>
-						</div>
-					</div>
-					<div class="choose-top-right">
-						<img src="./img/workers.png" alt="" />
-					</div>
-				</div>
-				<div class="choose-bottom">
-					<div class="choose-bottom-left">
-						<h4 class="choose-bottom-left-head-4">Телефон горячей линии</h4>
-						<h3 class="choose-bottom-left-head-3">8 800 302-92-70</h3>
-					</div>
-					<div class="choose-bottom-right">
-						<h4 class="choose-bottom-right-title">Заказать обратный звонок</h4>
-						<div class="choose-bottom-right-buttons">
-							<button class="choose-bottom-right-buttons-1">
-								<p>Номер телефона</p>
-								+7 963 335-87-52
-							</button>
-							<button class="choose-bottom-right-buttons-2">
-								Заказать звонок
-							</button>
-						</div>
-						<p class="choose-bottom-right-p">
-							Отправляя вопрос, вы соглашаетесь с условиями Пользовательского
-							соглашения
-						</p>
-					</div>
-				</div>
-			</div>
-			<div class="space"></div>
-		</section>
-	</body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- google fonts -->
+
+  <title>Vuex team</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header-wrapper">
+        <button class="hidden"><img src="/icons/menu.svg" alt="menu"></button>
+
+        <div class="header-wrapper-item flex items-center justify-between my-30">
+          <a href="/" class="logo"><img src="/icons/logo.svg" alt="logo"></a>
+
+          <form class="searchBox flex items-center justify-between">
+            <input type="text" name="search" id="search" placeholder="Я хочу найти...">
+
+            <button type="submit"><img src="/icons/search.svg" alt="search"></button>
+          </form>
+
+          <button class="askQuestion flex items-center justify-between gap-15">
+            <img src="/icons/question.svg" alt="ask">
+
+            <span>Задать вопрос</span>
+          </button>
+
+          <div class="contact">
+            <h3>8 800 302-92-70</h3>
+            <h4>Бесплатный звонок юристу 24/7 </h4>
+          </div>
+        </div>
+
+        <nav class="nav flex items-center justify-between">
+          <ul class="flex items-center gap-15">
+            <li>
+              <button class="flex items-center justify-between gap-15">
+                <img src="/icons/phone.svg" alt="call">
+
+                <span>Заказать звонок</span>
+              </button>
+            </li>
+
+            <li>
+              <button class="flex items-center justify-between gap-15">
+                <img src="/icons/telegram.svg" alt="call">
+
+                <span>Telegram</span>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="flex items-center gap-30">
+            <li>
+              <a href="/">Отзывы</a>
+            </li>
+
+            <li>
+              <a href="/">Вопросы</a>
+            </li>
+
+            <li>
+              <a href="/">Наши юристы</a>
+            </li>
+
+            <li>
+              <a href="/">Статьи</a>
+            </li>
+
+            <li>
+              <a href="/">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="flex items-start gap-15">
+            <div class="hidden">
+              <img src="/icons/search-green.svg" alt="search">
+            </div>
+
+            <a href="/" class="signin flex items-center gap-15">
+              <img src="/icons/user.svg" alt="user">
+
+              <span>Вход / Регистрация</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="route flex items-center gap-15 my-30">
+        <span>Главная</span>
+        <span>/</span>
+        <span>Горячая линия</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="container">
+      <div class="wrapper flex items-center justify-between">
+        <div>
+          <h1>Горячая линия по оказанию юридической помощи онлайн</h1>
+          <h2>Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь
+            к
+            специалистам «100 Юристов», вы можете рассчитывать на прозрачные, понятные условия сотрудничества</h2>
+
+          <div class="flex items-center gap-30">
+            <button class="intro-askQuestion flex items-center justify-between gap-15">
+              <span>Задать вопрос юристу</span>
+            </button>
+
+            <div class="intro-contact">
+              <h3>8 800 302-92-70</h3>
+              <h4>Бесплатный звонок юристу 24/7 </h4>
+            </div>
+          </div>
+
+          <ul class="flex items-center gap-30 my-30">
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-1.svg" alt="1">
+
+              <span>Круглосуточно</span>
+            </li>
+
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-2.svg" alt="1">
+
+              <span>Бесплатно</span>
+            </li>
+
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-3.svg" alt="1">
+
+              <span>Конфиденциально</span>
+            </li>
+
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-4.svg" alt="1">
+
+              <span>Быстро</span>
+            </li>
+          </ul>
+        </div>
+
+        <img class="intro-image" src="/images/image-1.png" alt="operator">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <div class="green-cont">
+        <div class="green-cont-left">
+          <img src="/images/woman.png" class="human-img" alt="" />
+          <img src="/images/ellipse.png" class="ellipse-img" alt="" />
+        </div>
+        <div class="green-cont-right">
+          <div class="green-child-2">
+            <h4 class="head-4">Звоните, мы работаем 24/7</h4>
+            <h3 class="head-3">8 800 302-92-70</h3>
+          </div>
+          <div class="green-child-3">
+            <h5 class="head-5">64 юриста сейчас онлайн</h5>
+            <img src="/images/users.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div class="help-cont">
+        <h4 class="help-title">Как мы сможем помочь вам?</h4>
+        <div class="help-grid">
+          <div class="help-grid-item">
+            <img src="/images/help-1.png" alt="" />
+            <p>
+              Провести бесплатную консультацию на личном приёме у нас в офисе,
+              по телефону горячей линии <b>8 800 302-92-70</b>, в онлайн чате
+              или по WhatsApp и Telegram
+            </p>
+          </div>
+          <div class="help-grid-item">
+            <img src="/images/help-2.png" alt="" />
+            <p>
+              В ходе консультации будет проанализирована ваша ситуация с точки
+              зрения законодательства Российской Федерации с последними
+              изменениями на сегодняшний день
+            </p>
+          </div>
+          <div class="help-grid-item">
+            <img src="/images/help-3.png" alt="" />
+            <p>
+              После чего наш специалист сможет определить все возможные пути
+              решения вашей ситуации выявить все возможные подводные камни и
+              подскажет как их избежать.
+            </p>
+          </div>
+          <div class="help-grid-item">
+            <img src="/images/help-4.png" alt="" />
+            <p>
+              Как показывает практика данной консультации бывает достаточно для
+              решения вашего вопроса. Если нет, то вы всегда сможете
+              воспользоваться нашими услугами на выгодных условиях.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div class="choose-cont">
+        <div class="choose-top">
+          <div class="choose-top-left">
+            <h4 class="choose-title">Почему стоит выбрать нас?</h4>
+            <p>
+              Срочно понадобились услуги профессионального юриста или адвоката?
+              Решение есть! Наша горячая юридическая линия – возможность
+              оперативно, абсолютно бесплатно получить ответ на любой вопрос
+            </p>
+            <div class="choose-number">
+              <div class="">
+                <h4 class="choose-number-title">100 тыс</h4>
+                <p class="choose-number-p">Успешных дел</p>
+              </div>
+              <div class="">
+                <h4 class="choose-number-title">10 лет</h4>
+                <p class="choose-number-p">Успешных дел</p>
+              </div>
+              <div class="">
+                <h4 class="choose-number-title">100</h4>
+                <p class="choose-number-p">Юристов онлайн</p>
+              </div>
+            </div>
+          </div>
+          <div class="choose-top-right">
+            <img src="/images/workers.png" alt="" />
+          </div>
+        </div>
+        <div class="choose-bottom">
+          <div class="choose-bottom-left">
+            <h4 class="choose-bottom-left-head-4">Телефон горячей линии</h4>
+            <h3 class="choose-bottom-left-head-3">8 800 302-92-70</h3>
+          </div>
+          <div class="choose-bottom-right">
+            <h4 class="choose-bottom-right-title">Заказать обратный звонок</h4>
+            <div class="choose-bottom-right-buttons">
+              <button class="choose-bottom-right-buttons-1">
+                <p>Номер телефона</p>
+                +7 963 335-87-52
+              </button>
+              <button class="choose-bottom-right-buttons-2">
+                Заказать звонок
+              </button>
+            </div>
+            <p class="choose-bottom-right-p">
+              Отправляя вопрос, вы соглашаетесь с условиями Пользовательского
+              соглашения
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+    </div>
+  </section>
+
+</body>
+
 </html>
