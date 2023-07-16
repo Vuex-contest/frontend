@@ -106,6 +106,58 @@
     </div>
   </header>
 
+  <section class="intro">
+    <div class="container">
+      <div class="wrapper flex items-center justify-between">
+        <div>
+          <h1>Горячая линия по оказанию юридической помощи онлайн</h1>
+          <h2>Профессиональная помощь доступна круглосуточно – заявки обрабатываются в любое время дня и ночи. Обращаясь
+            к
+            специалистам «100 Юристов», вы можете рассчитывать на прозрачные, понятные условия сотрудничества</h2>
+
+          <div class="flex items-center gap-30">
+            <button class="intro-askQuestion flex items-center justify-between gap-15">
+              <span>Задать вопрос юристу</span>
+            </button>
+
+            <div class="intro-contact">
+              <h3>8 800 302-92-70</h3>
+              <h4>Бесплатный звонок юристу 24/7 </h4>
+            </div>
+          </div>
+
+          <ul class="flex items-center gap-30 my-30">
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-1.svg" alt="1">
+
+              <span>Круглосуточно</span>
+            </li>
+
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-2.svg" alt="1">
+
+              <span>Бесплатно</span>
+            </li>
+
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-3.svg" alt="1">
+
+              <span>Конфиденциально</span>
+            </li>
+
+            <li class="flex items-center gap-15">
+              <img src="/icons/intro-icon-4.svg" alt="1">
+
+              <span>Быстро</span>
+            </li>
+          </ul>
+        </div>
+
+        <img class="intro-image" src="/images/image-1.png" alt="operator">
+      </div>
+    </div>
+  </section>
+
 </body>
 
 <style lang="css">
@@ -150,6 +202,10 @@
     display: none
   }
 
+  .text-underline {
+    text-decoration: underline;
+  }
+
   .searchBox {
     width: 300px;
     border-radius: 10px;
@@ -185,7 +241,17 @@
     cursor: pointer;
   }
 
-  .askQuestion:hover {
+  .intro-askQuestion {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: var(--green, #33836E);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .askQuestion:hover,
+  .intro-askQuestion:hover {
     background: var(--green, #33836ef2);
   }
 
@@ -198,7 +264,19 @@
     margin: 0;
   }
 
-  .contact h4 {
+  .intro-contact h3 {
+    color: var(--green, #33836E);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    border-bottom: #33836E solid 3px;
+    display: inline-block;
+  }
+
+  .contact h4,
+  .intro-contact h4 {
     color: var(--gray-medium, rgba(47, 43, 67, 0.50));
     font-size: 14px;
     font-style: normal;
@@ -207,7 +285,12 @@
     margin: 0;
   }
 
-  nav ul li {
+  ul {
+    margin: 0;
+    padding-inline-start: 0;
+  }
+
+  li {
     list-style-type: none;
   }
 
@@ -238,6 +321,30 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+  .intro h1 {
+    color: var(--base-black, #140A32);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.14px;
+    margin: 0;
+  }
+
+  .intro h2 {
+    color: var(--base-black, #140A32);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 20px 0;
+  }
+
+  .intro-image {
+    margin: 0 0 50px 240px;
+    scale: 1.2;
   }
 
   @media (max-width:640px) {
@@ -276,6 +383,17 @@
 
     .logo img {
       width: 100%;
+    }
+
+    .intro .wrapper {
+      flex-direction: column;
+      flex-direction: column-reverse;
+      align-items: start;
+    }
+
+    .intro-image {
+      scale: 1;
+      margin: 0;
     }
   }
 </style>
